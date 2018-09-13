@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>New York Times Search</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        .jumbotron {
+            text-align: center;
+            background: navy;
+            color: white;
+        }
+        #Newspaper {
+            float: left;
+        }
+        .row1 {
+            padding: 25px;
+            border: 1px solid lightgray;
+            margin: 0px 0px 10px 0px;  
+        }
+        .row2 {
+            padding: 25px;
+            border: 1px solid lightgray;
+            margin: 10px 0px 0px 0px;  
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <!-- <img src="newspaper.png" alt="Newspaper" id="Newspaper" height="30" width="30"> -->
+            <h1 class="display-4">New York Times Search</h1>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <div class="row1">
+            <h4>Search Parameters</h4>
+        </div> 
+        <div class="row1">
+            <form>
+                <div class="form-group">
+                    <label for="searchTerm" id="search">Search Term</label>
+                    <input type="searchTerm" class="form-control" id="searchTerm" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="numberOfRecords" id="records">Number of Records to Receive</label>
+                    <select class="form-control" id="numberOfRecords">
+                        <option>1</option>
+                        <option>5</option>
+                        <option>10</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="startYear" id="start-year">Start Year (Optional)</label>
+                    <input type="startYear" class="form-control" id="startYear" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="endYear" id="end-year">End Year (Optional)</label>
+                    <input type="endYear" class="form-control" id="endYear" placeholder="">
+                </div>
+                <button class="btn btn-primary" id='search-button'>Search</button>
+                <button type="clearResults" class="btn btn-primary">Clear Results</button>
+            </form>
+        </div>
+        <div class="row2">
+            <h4>Top Articles</h4>
+        </div>
+        <div class="row2" id="topArticles">
+            
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Made with lots and lots of LOVE</p>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+
+<script src="nyt.js"></script>
+
+
+
+</body>
+
+</html>
